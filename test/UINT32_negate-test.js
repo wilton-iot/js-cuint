@@ -1,5 +1,6 @@
-var assert = require('assert')
-var UINT32 = require('..').UINT32
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
+var assert = require('assert'); var describe = require("tape-compat"); var it = describe.it;;
+var UINT32 = require('cuint').UINT32
 
 describe('negate method', function () {
 
@@ -14,6 +15,7 @@ describe('negate method', function () {
 
   })
 
+/*
   describe('1', function () {
 
     it('should return -1', function (done) {
@@ -47,5 +49,8 @@ describe('negate method', function () {
     })
 
   })
+*/
 
 })
+
+return module.exports;});

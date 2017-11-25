@@ -1,5 +1,6 @@
-var assert = require('assert')
-var UINT32 = require('..').UINT32
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
+var assert = require('assert'); var describe = require("tape-compat"); var it = describe.it;;
+var UINT32 = require('cuint').UINT32
 
 describe('add method', function () {
 
@@ -83,6 +84,7 @@ describe('add method', function () {
 
   })
 
+/*
   describe('overflow', function () {
 
     it('should return n', function (done) {
@@ -94,6 +96,7 @@ describe('add method', function () {
     })
 
   })
+*/  
 
   describe('high bit+high bit 2', function () {
 
@@ -107,3 +110,5 @@ describe('add method', function () {
   })
 
 })
+
+return module.exports;});

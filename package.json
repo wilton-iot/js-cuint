@@ -27,5 +27,15 @@
   "devDependencies": {
     "minify": "0.2.x",
     "mocha": "^2.1.0"
+  },
+  "wilton": {
+    "excludes": [
+      "build",
+      "examples",
+      "test",
+      "History.md",
+      "build.js",
+      "runAllTests.js"
+    ]
   }
 }

@@ -1,5 +1,6 @@
-var assert = require('assert')
-var UINT64 = require('..').UINT64
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
+var assert = require('assert'); var describe = require("tape-compat"); var it = describe.it;;
+var UINT64 = require('cuint').UINT64
 
 describe('equals method', function () {
 
@@ -60,3 +61,5 @@ describe('equals method', function () {
   })
 
 })
+
+return module.exports;});
