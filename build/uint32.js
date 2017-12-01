@@ -1,4 +1,4 @@
-define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
+define(function(localRequire, exports, module) { var requireOrig = require; require = localRequire;
 /**
 	C-like unsigned 32 bits integers in Javascript
 	Copyright (C) 2013, Pierre Curto
@@ -451,4 +451,4 @@ define(function(){var require = WILTON_requiresync;var module = {exports: {}};va
 
 })(this)
 
-return module.exports;});
+require = requireOrig;});

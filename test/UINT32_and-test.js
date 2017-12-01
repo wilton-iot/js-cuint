@@ -1,4 +1,4 @@
-define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
+define(function(localRequire, exports, module) { var requireOrig = require; require = localRequire;
 var assert = require('assert'); var describe = require("tape-compat"); var it = describe.it;;
 var UINT32 = require('cuint').UINT32
 
@@ -64,4 +64,4 @@ describe('and method', function () {
 
 })
 
-return module.exports;});
+require = requireOrig;});
